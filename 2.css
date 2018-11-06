@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { 
+	margin:0;
+	padding:0;
+	font-family: Arial, 宋体; 
+	font-size: 25px; 
+	line-height: 25px; 
+	color:rgba(0,0,0,1.00); 
+	text-align: left; 
+	background:rgba(233,218,218,1.00);  
+	z-index: 100;
+}
+	
+.background {
+ background-image: -webkit-radial-gradient(left top,rgba(223,231,199,1.00), rgba(71,171,147,1.00));
+}   
+
+#content .header {
+	        background-repeat:no-repeat;
+			width:400px;
+			position:absolute;
+			z-index:110;
+			top: 40px;
+			height:260px;
+			margin-top:40px;
+			margin-left: 300px;
+}
+
+#page{          /*主框架*/
+	width:1100px;
+	margin:0 auto;
+	padding: 70px 0 70px 0;
+}
+
+#page .footer .body{   
+	background:rgba(255,255,255,1.00);  
+	width:1100px;
+	height: 1000px;
+	overflow:hidden; 
+	border-radius: 50px;
+}
+	
+img#头像{
+	border:0;  /*边界*/
+	margin:20px 0 20px 20px;
+	border-radius: 100px;
+}
+#page .footer .body #sidebar{
+	width:210px;
+	float:left;
+	border:0;
+	margin:20px 20px 20px 20px;
+}
+	
+#sidebar ul.选项{
+	margin:0 0  50px 10px;
+	padding:130px 0 0 0;
+	list-style-type:none; /*列表类型*/
+	background-position:center;
+	position:relative;
+	z-index:9990;  
+}
+	
+a:link,a.visited{ /*261*/
+	color:#000;
+	display:block;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	padding: 4px 10px 4px 10px;
+	background-color: rgba(205,232,230,1.00);
+	text-decoration: none;
+	text-align: center;
+	border-top: 1px solid #ece0e0;
+	border-left: 1px solid #ece0e0;
+	border-bottom: 1px solid #ece0e0;
+	border-right: 1px solid #ece0e0;
+	border-radius: 20px;
+}
+a:hover{
+	color: brown;
+	padding: 5px 8px 5px 8px;
+	background-color:#e2c4c9;
+	border-top: 1px solid #636060;
+	border-left: 1px solid #636060;
+	border-bottom: 1px solid #ece0e0;
+	border-right: 1px solid #ece0e0;
+	
+}
+
+.progress-title{
+    font-size: 25px;
+    font-weight: 700;
+    color:rgba(180,174,174,1.00);
+    margin: 30px 0 0 40px;
+	
+}
+.progress{
+    height: 20px;
+    background: white;  /*框架背景颜色*/
+    border-radius: 100px;
+    border: 10px solid rgba(219,203,204,1.00); /*边框高度与颜色*/
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+	margin:30px 0 0 40px;
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    border:  10px solid rgba(219,236,190,1.00);
+    -webkit-animation: animate-positive 3s;
+}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
